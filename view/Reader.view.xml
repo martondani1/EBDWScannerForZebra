@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" id="appView" xmlns="sap.m" controllerName="transmeri.barcode.Barcode.controller.Reader" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+				<content>
+					<List id="productsList" items="{}">
+						<items>
+							<ObjectListItem
+								title="{}"
+								number="{}">
+							</ObjectListItem>
+						</items>
+					</List>
+					<List id="scannedBarcodes">
+
+					</List>
+				</content>
+				<footer>
+				    <Bar id="bar0">
+				        <contentMiddle>
+				            <Button xmlns="sap.m" text="Scan" id="scanButton" width="80%" type="Emphasized" press="triggerScan"/>
+				        </contentMiddle>
+				    </Bar>
+				</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
